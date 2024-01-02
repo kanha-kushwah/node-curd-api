@@ -14,7 +14,7 @@ const router = express.Router();
 app.use(bodyParser.json());
 app.use(cors()); // Enable CORS for all routes
 
-mongoose.connect('mongodb://localhost:27017/curd');
+mongoose.connect('mongodb+srv://kanha:uYmWj2Cd8jgLwiOq@curd.5l0j1v5.mongodb.net/');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
